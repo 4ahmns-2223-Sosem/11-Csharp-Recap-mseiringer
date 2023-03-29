@@ -21,7 +21,7 @@ public class MyEnums : MonoBehaviour
 
         switch (mystate)
         {
-            case State.Done: 
+            case State.Done:
                 Debug.Log((int)State.Done);
                 break;
             case State.WIP:
@@ -30,23 +30,25 @@ public class MyEnums : MonoBehaviour
             case State.Cancel:
                 Debug.Log((int)State.Cancel);
                 break;
-
         }
 
-        if (mystate == State.Done)
-        {
-            Debug.Log((int)State.Done);
-        }
 
-        else if (mystate == State.WIP)
-        {
-            Debug.Log((int)State.WIP);
-        }
+                if (mystate == State.Done)
+                {
+                    Debug.Log((int)State.Done);
+                }
 
-        if ((mystate == State.Cancel);
-        {
-            Debug.Log((int)State.Cancel);
-        }
+                else if (mystate == State.WIP)
+                {
+                    Debug.Log((int)State.WIP);
+                }
+
+                else;
+                {
+                    Debug.Log((int)State.Cancel);
+                }
+
+        
     }
 
     // Update is called once per frame
